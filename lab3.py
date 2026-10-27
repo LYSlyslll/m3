@@ -114,7 +114,7 @@ class DiscountStrategy(ABC):
 
     @abstractmethod
     def apply(self, subtotal: Money) -> Money:
-        raise NotImplementedError
+        ...
 
 
 class NoDiscount(DiscountStrategy):
